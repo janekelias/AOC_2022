@@ -3,16 +3,16 @@ with open("input_2.txt") as file_object:
     cheat_list = file_object.read()
 # split by line \n for each round of game
     round_list = cheat_list.split("\n")
-    print(round_list) # check
+    print(round_list)  # check
     opponent_sign = []
     player_sign = []
     for round_tactic in round_list:
         # separate by whitespace to create list of opponents and players signs
-        a,b = round_tactic.split()
+        a, b = round_tactic.split()
         opponent_sign.append(a)
         player_sign.append(b)
 
-    print(opponent_sign) # check
+    print(opponent_sign)  # check
     print(player_sign)
     print("\n\n\n")
     psign_list = []
@@ -29,13 +29,13 @@ with open("input_2.txt") as file_object:
     print(psign_list)
     # determine sign in opponent store in new list
     for osign in opponent_sign:
-            if osign == "A":
-                cur_o_sign = "ROCK"
-            elif osign == "B":
-                cur_o_sign = "PAPER"
-            elif osign == "C":
-                cur_o_sign = "SCISSORS"
-            osign_list.append(cur_o_sign)
+        if osign == "A":
+            cur_o_sign = "ROCK"
+        elif osign == "B":
+            cur_o_sign = "PAPER"
+        elif osign == "C":
+            cur_o_sign = "SCISSORS"
+        osign_list.append(cur_o_sign)
     print(osign_list)
 
     print(len(round_list))
