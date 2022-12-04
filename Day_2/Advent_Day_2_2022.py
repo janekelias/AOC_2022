@@ -89,3 +89,5 @@ with open("input_2.txt") as file_object:
     print("\nTogether the final point value is:")
     print(resolut_points + sign_points)
 
+    #part two:
+
